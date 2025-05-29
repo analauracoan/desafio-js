@@ -6,7 +6,13 @@
 // ENUNCIADO
 // Este algoritmo possui um erro. Que erro é esse? 
 
-// RESPOSTA
-export function alternativaCorreta() {
+// RESPOSTA DO DESAFIO -------------- //
+function alternativaCorreta() {
     return "Alternativa b) Loop infinito";
+}
+// -------------- //
+
+function mostraResposta() {
+    const resposta = alternativaCorreta();
+    document.getElementById("resposta").textContent = resposta;
 }
