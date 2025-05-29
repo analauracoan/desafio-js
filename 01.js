@@ -1,17 +1,16 @@
 // QUESTÃO 01
 // Autor(a): Ana Laura Coan
 // Data e Hora de Criação: 29/05/2025, 09:46
-// Data e Hora da Última Alteração: 00/00/0000, 00:00
-
+// Data e Hora da Última Alteração: 29/05/2025, 11:06
+0
 // ENUNCIADO
 // Faça uma função que receba um número inteiro (entre 0 e 9999) e escreva no console o número recebido
 // por extenso.
 // Exemplo: 1500 => um mil e quinhentos
 
-function escreveNumeroPorExtenso(numero) {
+export function escreveNumeroPorExtenso(numero) {
     if (numero < 0 || numero > 9999) {
-        console.log("Número fora do intervalo permitido (0 a 9999).");
-        return;
+        return "Número fora do intervalo permitido (0 a 9999).";
     }
 
     const unidades = ["zero", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove"];
@@ -20,8 +19,7 @@ function escreveNumeroPorExtenso(numero) {
     const centenas = ["", "cento", "duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos"];
 
     if (numero === 0) {
-        console.log("zero");
-        return;
+        return "zero";
     }
 
     let partes = [];
@@ -68,5 +66,5 @@ function escreveNumeroPorExtenso(numero) {
         }
     }
 
-    console.log(resultado);
+    return resultado;
 }
