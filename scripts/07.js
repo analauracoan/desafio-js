@@ -24,7 +24,7 @@ function encontraSomaDeObjetivo(array, objetivo) {
 }
 // -------------- //
 
-function buscarIndices() {
+function buscaIndices() {
     const arrayStr = document.getElementById('arrayInput').value;
     const objetivo = parseInt(document.getElementById('objetivoInput').value, 10);
 

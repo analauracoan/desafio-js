@@ -27,7 +27,7 @@ class Pilha {
 
 const pilha = new Pilha();
 
-function atualizarVisualizacao() {
+function atualizaVisualizacao() {
     const pilhaDiv = document.getElementById('pilha');
     pilhaDiv.innerHTML = '';
 
@@ -44,19 +44,19 @@ function atualizarVisualizacao() {
     }
 }
 
-function adicionarNome() {
+function adicionaNome() {
     const nomeInput = document.getElementById('nomeInput');
     const nome = nomeInput.value.trim();
     if (nome) {
         pilha.adicionar(nome);
         nomeInput.value = '';
-        atualizarVisualizacao();
+        atualizaVisualizacao();
     }
 }
 
-function removerNome() {
+function removeNome() {
     pilha.remover();
-    atualizarVisualizacao();
+    atualizaVisualizacao();
 }
 
-atualizarVisualizacao();
+atualizaVisualizacao();
