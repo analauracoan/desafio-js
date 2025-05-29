@@ -1,0 +1,22 @@
+// QUESTÃO 04
+// Autor(a): Ana Laura Coan
+// Data e Hora de Criação: 29/05/2025, 10:11
+// Data e Hora da Última Alteração: 00/00/0000, 00:00
+
+// ENUNCIADO
+// Criar uma função que realiza o cálculo do IMC, a função deve receber dois parâmetros, altura e peso e
+// retornar o IMC seguido da respectiva classificação. O IMC é calculado com PESO / ALTURA².
+
+function calculaIMC(peso, altura) {
+  const imc = peso / (altura * altura);
+
+  if (imc <= 18.4) {
+    console.log('Abaixo do peso.');
+  } else if (imc <= 24.9) {
+    console.log('Peso normal.');
+  } else if (imc <= 29.9) {
+    console.log('Acima do peso');
+  } else {
+    console.log('Obeso');
+  }
+}
