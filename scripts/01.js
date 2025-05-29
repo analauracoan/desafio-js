@@ -2,11 +2,10 @@
 // Autor(a): Ana Laura Coan
 // Data e Hora de Criação: 29/05/2025, 09:46
 // Data e Hora da Última Alteração: 29/05/2025, 11:06
-0
+
 // ENUNCIADO
 // Faça uma função que receba um número inteiro (entre 0 e 9999) e escreva no console o número recebido
 // por extenso.
-// Exemplo: 1500 => um mil e quinhentos
 
 // RESPOSTA DO DESAFIO -------------- //
 function escreveNumeroPorExtenso(numero) {
