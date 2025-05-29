@@ -7,7 +7,8 @@
 // Criar uma função que realiza o cálculo do IMC, a função deve receber dois parâmetros, altura e peso e
 // retornar o IMC seguido da respectiva classificação. O IMC é calculado com PESO / ALTURA².
 
-export function calculaIMC(peso, altura) {
+// RESPOSTA DO DESAFIO -------------- //
+function calculaIMC(peso, altura) {
   const imc = peso / (altura * altura);
 
   if (imc <= 18.4) {
@@ -19,4 +20,18 @@ export function calculaIMC(peso, altura) {
   } else {
     return "Obeso";
   }
+}
+// -------------- //
+
+function calcula() {
+  const peso = parseFloat(document.getElementById("peso").value);
+  const altura = parseFloat(document.getElementById("altura").value);
+
+  if (!peso || !altura || peso <= 0 || altura <= 0) {
+    document.getElementById("resultado").textContent = "Por favor, insira valores válidos.";
+    return;
+  }
+
+  const resultado = calculaIMC(peso, altura);
+  document.getElementById("resultado").textContent = resultado;
 }
