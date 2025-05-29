@@ -14,7 +14,7 @@ function encontraNumeroEPosicao(array, pesquisa) {
   if (posicao >= 0) {
     return `O número está presente na posição: ${posicao}`;
   } else {
-    return "o número não existe no array";
+    return "O número não existe no array";
   }
 }
 // -------------- //
