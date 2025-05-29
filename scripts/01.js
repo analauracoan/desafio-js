@@ -8,7 +8,7 @@
 // por extenso.
 // Exemplo: 1500 => um mil e quinhentos
 
-export function escreveNumeroPorExtenso(numero) {
+function escreveNumeroPorExtenso(numero) {
     if (numero < 0 || numero > 9999) {
         return "Número fora do intervalo permitido (0 a 9999).";
     }
@@ -67,4 +67,11 @@ export function escreveNumeroPorExtenso(numero) {
     }
 
     return resultado;
+}
+
+function converter() {
+    const input = document.getElementById("numeroInput").value;
+    const numero = parseInt(input, 10);
+    const resultado = escreveNumeroPorExtenso(numero);
+    document.getElementById("resultado").textContent = resultado;
 }
